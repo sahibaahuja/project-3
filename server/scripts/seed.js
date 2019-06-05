@@ -3,11 +3,11 @@ const db = require("../models");
 
 const unirest = require("unirest");
 
-const keys = require("../../keys.js");
+// const keys = require("../../keys.js");
 
-const rapidapi = keys.rapid_api_key;
+// const rapidapi = keys.rapid_api_key;
 
-console.log(keys);
+// console.log(keys);
 
 mongoose.connect(
   process.env.MONGODB_URI ||
@@ -33,27 +33,26 @@ mongoose.connect(
 
 function apiInput() {
   const drinkseed = [];
-  var drink = {};
-
   // unirest.get("https://the-cocktail-db.p.rapidapi.com/filter.php?a=" + category)
-  
+
   unirest.get("https://the-cocktail-db.p.rapidapi.com/filter.php?a=Alcoholic")
 
     .header("X-RapidAPI-Host", "the-cocktail-db.p.rapidapi.com")
-    .header("X-RapidAPI-Key", rapidapi)
+    .header("X-RapidAPI-Key", "83f8abecaemsha4d3f57989ff115p1ece07jsn8848c6a9e34d")
 
     .end(function (result) {
-
+      console.log("bananna")
+      var drink = {};
       for (let i = 0; i < result.body.drinks.length; i++) {
         var drinkId = result.body.drinks[i].idDrink;
 
         unirest.get("https://the-cocktail-db.p.rapidapi.com/lookup.php?i=" + drinkId)
 
           .header("X-RapidAPI-Host", "the-cocktail-db.p.rapidapi.com")
-          .header("X-RapidAPI-Key", rapidapi)
+          .header("X-RapidAPI-Key", "83f8abecaemsha4d3f57989ff115p1ece07jsn8848c6a9e34d")
 
           .end(function (result) {
-            // console.log(result.body.drinks);
+            console.log(result.body.drinks);
 
             var data = result.body.drinks[0];
 
@@ -68,6 +67,21 @@ function apiInput() {
             drinkseed.push(drink);
           })
       }
+
+      console.log("removing drinks")
+      db.Drinks.deleteMany({}, function (err) {
+        if (err) throw err;
+        console.log(drinkseed);
+    
+        console.log("inserting drinks");
+        db.Drinks.insertMany(drinkseed, function (err, docs) {
+          console.log('test');
+          if (err) throw err;
+          console.log(docs.length + " records inserted!");
+          process.exit(0);
+        });
+      });
+    
     });
 
   // console.log("inserting drinks");
@@ -78,19 +92,6 @@ function apiInput() {
   //   process.exit(0);
   // });
 
-  console.log("removing drinks")
-  db.Drinks.deleteMany({}, function (err) {
-    if (err) throw err;
-    console.log(drinkseed);
-
-    console.log("inserting drinks");
-    db.Drinks.insertMany(drinkseed, function (err, docs) {
-      console.log('test');
-      if (err) throw err;
-      console.log(docs.length + " records inserted!");
-      process.exit(0);
-    });
-  });
 }
 
 apiInput();

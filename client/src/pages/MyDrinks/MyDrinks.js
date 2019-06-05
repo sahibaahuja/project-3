@@ -76,7 +76,11 @@ class MYDrinks extends Component {
         <h1>View Drinks</h1>
         {drinks.map(drink=>{
           return (
+            <>
             <h3>{drink.name}</h3>
+            <p>{drink.instructions}</p>
+            <p><img src={drink.image} alt={drink.name} /></p> 
+            </>
           )
         })}
       </div>

@@ -25,7 +25,7 @@ static contextType = AuthContext;
   }
 
   handleSubmit(authToken) {
-
+console.log("bannana")
     API.Drinks.createDrink({
       image: this.state.image,
       name: this.state.name,
@@ -48,7 +48,7 @@ static contextType = AuthContext;
     return (
       <div>
         <h1>Create Drink</h1>
-        <form onSubmit={this.handleSubmit}>
+        <form>
               <Input name="image" onChange={this.handleInputChange} value={this.state.image} placeholder="Image (required)" />
               <Input name="name" onChange={this.handleInputChange} value={this.state.name} placeholder="Name (required)" />
               <TextArea name="instructions" onChange={this.handleInputChange} value={this.state.instructions} placeholder="Instructions (required)" />

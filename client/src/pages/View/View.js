@@ -54,7 +54,7 @@ class View extends Component {
 
   render() {
     let { drinks } = this.state
-    
+    console.log(drinks)
     if (this.state.isComplete) {
       return <Redirect to="/" />;
     }
@@ -63,10 +63,13 @@ class View extends Component {
       <div>
         <h1>View Drinks</h1>
         {drinks.map(drink=>{
+          console.log(drink)
           return (
             <>
             <h3>{drink.name}</h3>
             <p>{drink.instructions}</p>
+            <p>{drink.ingredients_measurements}</p>
+            <p><img src={drink.image} alt={drink.name} /></p>
             </>
           )
         })}
@@ -76,16 +79,3 @@ class View extends Component {
 }
 
 export default View;
-
-// name: { type: String, required: true },
-//     category: { type: String },
-//     kind: { type: String },
-//     image: { type: String, default: "http://placehold.it/200x200" },
-//     instructions: { type: String, required: true },
-//     ingredients_measurements: { type: String},
-//     // ingredient1: { type: String, required: true },
-//     // ingredient2: { type: String },
-//     // ingredient3: { type: String },
-//     // ingredient4: { type: String },
-//     // ingredient5: { type: String },
-//     glass:

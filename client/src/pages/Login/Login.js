@@ -64,7 +64,7 @@ class Login extends Component {
                   </div>
                 </div>}
               <div className='row'>
-                <div className='col'>
+                <div className='col-sm-4'>
                   <LoginForm onSubmit={this.handleSubmit} />
                 </div>
               </div>

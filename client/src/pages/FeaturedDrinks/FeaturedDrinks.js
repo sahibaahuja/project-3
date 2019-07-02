@@ -31,7 +31,7 @@ class FeaturedDrinks extends Component {
                                         </div>
                                         <div className="flip-card-back">
                                             <strong><h4 className='card-title'>Jeff 'The Code Guru'</h4></strong>
-                                            <p className='card-textflip'>Our mocha take on White Russian! In honour of our phenomenal 'Guru' Jeffery Hoffman, it's one of his favroite drink! Thank you Jeff for believing in us when we doubted ourselves!</p>
+                                            <p className='card-textflip'>Our mocha take on White Russian! In honour of our phenomenal 'Guru' Jeffery Hoffman! Thanks believing in us when we doubted ourselves!</p>
                                         </div>
                                     </div>
                                 </div>

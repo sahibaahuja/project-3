@@ -42,7 +42,7 @@
   .book {
     transform-style: preserve-3d;
     position: relative;
-    height: 500px;
+    height: 250px;
     cursor: pointer;
     backface-visibility: visible;
     /* margin-left: 25px; */
@@ -54,6 +54,7 @@
     position: absolute;
     width: 350px;
     height: 100%;
+    padding-top: 20%;
     top: 0; left: 0;
     transform-origin: left center;
     transition: transform .5s ease-in-out, box-shadow .35s ease-in-out;

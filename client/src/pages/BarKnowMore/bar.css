@@ -42,17 +42,17 @@
   .book {
     transform-style: preserve-3d;
     position: relative;
-    height: 400px;
+    height: 500px;
     cursor: pointer;
     backface-visibility: visible;
-    margin-left: 25px;
+    /* margin-left: 25px; */
     margin-bottom: 50px;
   }
  
   .front, .back, .page1, .page2, .page3, .page4, .page5, .page6 {
     transform-style: preserve-3d;
     position: absolute;
-    width: 300px;
+    width: 350px;
     height: 100%;
     top: 0; left: 0;
     transform-origin: left center;

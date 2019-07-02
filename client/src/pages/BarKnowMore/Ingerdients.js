@@ -15,7 +15,7 @@ class Ingredients extends Component {
                         <h2 className='pages-header'>Ingredients Input</h2>
                         <br />
                         <div className='row'>
-                            <div className='col-4'>
+                            <div className='col-sm-4'>
                                 <div className="book">
                                     <div className="back"></div>
                                     <div className="page6">here</div>
@@ -27,7 +27,7 @@ class Ingredients extends Component {
                                     <div className="front"><h3>Liquor</h3></div>
                                 </div>
                             </div>
-                            <div className='col-4'>
+                            <div className='col-sm-4'>
                                 <div className="book">
                                     <div className="back"></div>
                                     <div className="page6">here</div>
@@ -39,45 +39,7 @@ class Ingredients extends Component {
                                     <div className="front"><h3>Liquor</h3></div>
                                 </div>
                             </div>
-                            <div className='col-4'>
-                                <div className="book">
-                                    <div className="back"></div>
-                                    <div className="page6">here</div>
-                                    <div className="page5">there</div>
-                                    <div className="page4"></div>
-                                    <div className="page3"></div>
-                                    <div className="page2"></div>
-                                    <div className="page1"></div>
-                                    <div className="front"><h3>Liquor</h3></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='row'>
-                            <div className='col-4'>
-                                <div className="book">
-                                    <div className="back"></div>
-                                    <div className="page6">here</div>
-                                    <div className="page5">there</div>
-                                    <div className="page4"></div>
-                                    <div className="page3"></div>
-                                    <div className="page2"></div>
-                                    <div className="page1"></div>
-                                    <div className="front"><h3>Liquor</h3></div>
-                                </div>
-                            </div>
-                            <div className='col-4'>
-                                <div className="book">
-                                    <div className="back"></div>
-                                    <div className="page6">here</div>
-                                    <div className="page5">there</div>
-                                    <div className="page4"></div>
-                                    <div className="page3"></div>
-                                    <div className="page2"></div>
-                                    <div className="page1"></div>
-                                    <div className="front"><h3>Liquor</h3></div>
-                                </div>
-                            </div>
-                            <div className='col-4'>
+                            <div className='col-sm-4'>
                                 <div className="book">
                                     <div className="back"></div>
                                     <div className="page6">here</div>
@@ -91,7 +53,7 @@ class Ingredients extends Component {
                             </div>
                         </div>
                         <div className='row'>
-                            <div className='col-4'>
+                            <div className='col-sm-4'>
                                 <div className="book">
                                     <div className="back"></div>
                                     <div className="page6">here</div>
@@ -103,7 +65,7 @@ class Ingredients extends Component {
                                     <div className="front"><h3>Liquor</h3></div>
                                 </div>
                             </div>
-                            <div className='col-4'>
+                            <div className='col-sm-4'>
                                 <div className="book">
                                     <div className="back"></div>
                                     <div className="page6">here</div>
@@ -115,7 +77,45 @@ class Ingredients extends Component {
                                     <div className="front"><h3>Liquor</h3></div>
                                 </div>
                             </div>
-                            <div className='col-4'>
+                            <div className='col-sm-4'>
+                                <div className="book">
+                                    <div className="back"></div>
+                                    <div className="page6">here</div>
+                                    <div className="page5">there</div>
+                                    <div className="page4"></div>
+                                    <div className="page3"></div>
+                                    <div className="page2"></div>
+                                    <div className="page1"></div>
+                                    <div className="front"><h3>Liquor</h3></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='row'>
+                            <div className='col-sm-4'>
+                                <div className="book">
+                                    <div className="back"></div>
+                                    <div className="page6">here</div>
+                                    <div className="page5">there</div>
+                                    <div className="page4"></div>
+                                    <div className="page3"></div>
+                                    <div className="page2"></div>
+                                    <div className="page1"></div>
+                                    <div className="front"><h3>Liquor</h3></div>
+                                </div>
+                            </div>
+                            <div className='col-sm-4'>
+                                <div className="book">
+                                    <div className="back"></div>
+                                    <div className="page6">here</div>
+                                    <div className="page5">there</div>
+                                    <div className="page4"></div>
+                                    <div className="page3"></div>
+                                    <div className="page2"></div>
+                                    <div className="page1"></div>
+                                    <div className="front"><h3>Liquor</h3></div>
+                                </div>
+                            </div>
+                            <div className='col-sm-4'>
                                 <div className="book">
                                     <div className="back"></div>
                                     <div className="page6">here</div>

@@ -74,11 +74,11 @@ class Navigation extends Component {
                     </Link>
                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <div className="dropdown-divider"></div>
-                  <Link className="dropdown-item" to='/lookup' onClick={this.toggleCollapse}><strong>Lookup a Drink</strong></Link>
-                  <div className="dropdown-divider"></div>
                   <Link className="dropdown-item" to='/allsearch' onClick={this.toggleCollapse}><strong>Drink by type</strong></Link>
                   <div className="dropdown-divider"></div>
                   <Link className="dropdown-item" to='/search' onClick={this.toggleCollapse}><strong>Search</strong></Link>
+                  <div className="dropdown-divider"></div>
+                  <Link className="dropdown-item" to='/lookup' onClick={this.toggleCollapse}><strong>Lookup a Drink</strong></Link>
                 </div>
               </li>
             </ul>

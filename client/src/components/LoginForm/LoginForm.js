@@ -27,7 +27,7 @@ class LoginForm extends Component {
     const { email, password } = this.state;
 
     return (
-      <div className="card-loginform">
+      <div className="card-loginform sm-4">
         <div className="card-header-loginform"><h2>Login</h2><h4><hr></hr>And start exploring and creating!</h4></div>
         <div className="card-body">
           <form className='LoginForm' onSubmit={this.handleSubmit}>
@@ -35,8 +35,9 @@ class LoginForm extends Component {
               <div className="card-header-loginform">
                 {/* <label for="formGroupExampleInput"><h4>Email:</h4></label> */}
               </div>
-              <div  className="card-body" >
+              <div className="card-body" >
                 <input
+                  style={{ padding: '5%' }}
                   className='form-control1'
                   id='email'
                   type='email'
@@ -52,6 +53,7 @@ class LoginForm extends Component {
               </div>
               <div className="card-body">
                 <input
+                  style={{ padding: '5%' }}
                   className='form-control2'
                   id='password'
                   type='password'
@@ -62,8 +64,8 @@ class LoginForm extends Component {
                 /></div>
             </div>
             <button className='btn btn-primary btn-lg ' type='submit'>Sign In</button>
-            <br/>
-            <br/>
+            <br />
+            <br />
             <Link to='/register' onClick={this.toggleCollapse}> Dont Have an Account? Sign Up </Link>
           </form>
         </div>

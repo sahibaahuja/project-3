@@ -16,11 +16,11 @@ class HomePage extends Component {
     return (
       <div>
         <div className='row'>
-          <div className='col-sm-4'><Link to='/view'><h1 className='pages-header homepage'>Explore</h1></Link>
+          <div className='col-sm-4'><Link to='/view'><h2 className='pages-header homepage'>Explore</h2></Link>
           </div>
-          <div className='col-sm-4'><Link to='/search'><h1 className='pages-header homepage'>Search</h1></Link>
+          <div className='col-sm-4'><Link to='/search'><h2 className='pages-header homepage'>Search</h2></Link>
           </div>
-          <div className='col-sm-4'><Link to='/featured'><h1 className='pages-header homepage'>Experience</h1></Link>
+          <div className='col-sm-4'><Link to='/featured'><h2 className='pages-header homepage'>Experience</h2></Link>
           </div>
         </div>
         <div className='row-jumbo'>

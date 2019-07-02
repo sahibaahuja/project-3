@@ -29,31 +29,23 @@ class Tools extends Component {
                         <h2 className='pages-header'>Bar Tools</h2>
                         <div className='barpage'>
                             <div className="box">
-                                {/* <Link to='/'> */}
                                 <img src={jigger} alt="Drinks" />
-                                {/* </Link> */}
                                 <span>Jigger</span>
                                 <p>Jigger is a handy measurement tool to help you create a perfect cocktail. 
                                 </p>
                             </div>
                             <div className="box">
-                                {/* <Link to='/'> */}
                                 <img src={shaker} alt="Drinks" />
-                                {/* </Link> */}
                                 <span>Shaker</span>
                                 <p>A cocktail shaker is used to mix beverages by shaking. When ice is put in the shaker this allows for a quicker cooling of the drink before serving.</p>
                             </div>
                             <div className="box">
-                                {/* <Link to='/'> */}
                                 <img src={strainer} alt="Drinks" />
-                                {/* </Link> */}
                                 <span>Strainer</span>
                                 <p>A cocktail strainer is a metal bar accessory used to remove ice from a mixed drink as it is poured into the serving glass.</p>
                             </div>
                             <div className="box">
-                                {/* <Link to='/'> */}
                                 <img src={spoon} alt="Drinks" />
-                                {/* </Link> */}
                                 <span>Bar Spoon</span>
                                 <p>It is a metal spoon with a long and spiral handle, great for stirring drinks. Bar spoon is better than a normal spoon because it fits in any type of glassware and since cocktails require different glassware, a bar spoon comes in handy.
                                 </p>
@@ -61,30 +53,22 @@ class Tools extends Component {
                         </div>
                         <div className='barpage'>
                         <div className="box">
-                                {/* <Link to='/'> */}
                                 <img src={muddler} alt="Drinks" />
-                                {/* </Link> */}
                                 <span>Muddler</span>
                                 <p>For cocktails like Caipirinha or Mojito, you need a muddler to process the herbs. Muddling requires some technique but the key is to wake up the aromas of your herbs without bruising it. Bruising the herbs releases a chemical that damage the taste of cocktails.</p>
                             </div>
                             <div className="box">
-                                {/* <Link to='/'> */}
                                 <img src={knife} alt="Drinks" />
-                                {/* </Link> */}
                                 <span>Channel Knife</span>
                                 <p>Channel knives, a small spoon-shaped knife, are used for garnish by peeling long, thin spirals from citrus fruits. </p>
                             </div>
                             <div className="box">
-                                {/* <Link to='/'> */}
                                 <img src={glass} alt="Drinks" />
-                                {/* </Link> */}
                                 <span>Glasses</span>
                                 <p>A nice glass will make your cocktail even more attractive and the center of everyone's attention.</p>
                             </div>
                             <div className="box">
-                                {/* <Link to='/'> */}
                                 <img src={citrus} alt="Drinks" />
-                                {/* </Link> */}
                                 <span>Citrus Juicer</span>
                               <p>Citrus Juicer it is a simple deep round dish with a cone to squeeze the juice out of any citrus fruits. Some even have a strainer to separate the pulp from the juice. </p>
                             </div>
